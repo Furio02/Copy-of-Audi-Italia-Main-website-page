@@ -1,0 +1,646 @@
+@import url('https://fonts.cdnfonts.com/css/audi-type-2');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    font-family: 'Audi Type', sans-serif;
+    background-color: #e4e4e4;
+}
+
+.container{
+    margin: 0 5rem;
+    background-color: #fff;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+#logo{
+    width: 100px;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    list-style: none;
+    cursor: pointer;
+    color: #8e8e8e;
+}
+
+.nav-bar li:hover{
+    color: black;
+    transition: all .3s ease;
+}
+
+.ri-search-line{
+    margin-right: 3rem;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.foto1{
+    background-image: url(img/Foto\ 1.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 600px;
+}
+
+.dentro-immagine{
+    padding: 6rem;
+}
+
+.dentro-immagine h2{
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.dentro-immagine p{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.dentro-immagine button{
+    padding: 20px 35px;
+    background-color: #fff;
+    color: black;
+    font-weight: 400;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.dentro-immagine button:hover{
+    background-color: lightgray;
+    transition: all .3s ease;
+}
+
+.slider-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    background-color: #fff;
+    padding: 2rem;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    position: relative;
+}
+
+.slider img {
+    flex: 1;
+    width: 100%;
+    height: auto;
+}
+
+#prev,
+#next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    padding: 10px 0;
+    z-index: 1; 
+    cursor: pointer;
+}
+
+#prev {
+    left: 0;
+    height: 150px;
+    padding-left: 20px;
+}
+
+#next {
+    right: 0; 
+    height: 150px;
+    padding-right: 20px;
+}
+
+.ri-arrow-left-line:hover{
+    transform: scale(1.1);
+    transition: all .3s ease;
+}
+
+.ri-arrow-right-line:hover{
+    transform: scale(1.1);
+    transition: all .3s ease;
+}
+
+button {
+    font-size: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.car-model {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 17%; 
+}
+
+.car-model:hover{
+    transition: all .3s ease;
+    text-decoration: underline;
+    transform: scale(1.1);
+    cursor: pointer;
+}   
+
+.modelli-audi h1{
+    font-size: 3rem;
+}
+
+.desc{
+    display: flex;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.link ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+    cursor: pointer;
+    color: #a7a7a7;
+}
+
+.modelli-audi li:active{
+    text-decoration: underline;
+}
+
+.modelli-audi li:visited{
+    color: black;
+}
+
+.modelli-audi li:hover{
+    text-decoration: underline;
+    transition: all .3s ease;
+    color: black;
+}
+
+.audi-online{
+    background-image: url(img/foto\ 2.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.dentro-immagine-2{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem;
+    min-height: 750px;
+}
+
+.dentro-immagine-2 h2{
+    font-size: 3.5rem;
+}
+
+.dentro-immagine-2 h3{
+    font-size: 3rem;
+}
+
+.scelta{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1rem;
+}
+
+#opzione2{
+    margin-left: 5rem;
+}
+
+.btn{
+    margin-top: 2rem;
+    background-color: #fff;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 1rem;
+    width: 25rem;
+    border: none;
+}
+
+.btn:hover{
+    background-color: #a7a7a7;
+    transition: all .3s ease;
+}
+
+#foto-2{
+    width: 100%;
+    height: 32.25vw;
+    object-fit: cover;
+}
+
+.disponibilità{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    background-color: #444444;
+    padding-top: 2rem;
+    padding-left: 5rem;
+    color: #fff;
+}
+
+#disp:hover{
+    color: gainsboro;
+    cursor: pointer;
+}
+
+.dropdown{
+    display: flex;
+    flex-direction: row;
+}
+
+.audi-q8{
+    padding: 20rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+#audi-q8{
+    width: 800px;
+    height: 800px;
+    object-fit: cover;
+}
+
+.bottoni{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+
+.container-testo h2{
+    font-size: 5rem;
+}
+
+.container-testo p{
+    font-size: 15px;
+    color: #898989;
+    margin-bottom: 3rem;
+}
+
+#bottone1{
+    background-color: black;
+    color: #fff;
+    font-size: 15px;
+    padding: .5rem 3rem;
+}
+
+#bottone1:hover{
+    background-color: rgb(86, 86, 86);
+    transition: all .3s ease;
+}
+
+#bottone2{
+    border: 1px solid black;
+    font-size: 15px;
+    padding: .5rem 3rem;
+}
+
+.formule-finanziare-scroll{
+        height: 50vh;
+        text-align: center;   
+}
+
+.fadeInBottom{
+    -webkit-animation: fadeInBottom 2s both;
+    -moz-animation: fadeInBottom 2s both;
+    -o-animation: fadeInBottom 2s both;
+    animation: fadeInBottom 2s both;
+}
+
+@-webkit-keyframes fadeInBottom{
+    0%{
+        opacity: 0;
+        -webkit-transform: translateY(20vh);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@-moz-keyframes fadeInBottom{
+    0%{
+        opacity: 0;
+        -moz-transform: translateY(20vh);
+    }
+    100%{
+        opacity: 1;
+        -moz-transform: translateY(0);
+    }
+}
+
+@-o-keyframes fadeInBottom{
+    0%{
+        opacity: 0;
+        -o-transform: translateY(20vh);
+    }
+    100%{
+        opacity: 1;
+        -o-transform: translateY(0);
+    }
+}
+
+@keyframes fadeInBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(20vh);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated h1{
+    font-size: 5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.animated p{
+    margin-bottom: 4rem;
+}
+
+.parallax{
+    background-image: url(https://www.audi.it/content/dam/nemo/it/hp30/par/rs_6_2022_4339_3840x4000.jpg?imwidth=1920);
+    height: 1080px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10rem;
+}
+
+.ri-arrow-right-s-line {
+    transition: transform 400ms ease !important;
+}
+
+.link-page-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.link-page-1:hover p {
+    color: #727272 !important;
+
+}
+
+.link-page-1:hover .ri-arrow-right-s-line  {
+    transform: translate(10px) ;
+}
+
+.link-page-2{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.link-page-2:hover p {
+    color: #727272 !important;
+
+}
+
+.link-page-2:hover .ri-arrow-right-s-line  {
+    transform: translate(10px) ;
+}
+
+.rettangolo{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    margin-left: 3rem;
+    margin-right: 50%;
+    padding: 3rem 5rem;
+}
+
+.rettangolo h2{
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.spazio{
+    height: 5rem;
+}
+
+.charging{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: #fff;
+}
+
+.spazio-nero{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 3rem;
+}
+
+.testo{
+    display: flex;
+    gap: 7rem;
+    flex-direction: column;
+}
+
+.testo h2{
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.testo p{
+    font-weight: 400;
+}
+
+#audi-charging{
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 1rem;
+    margin-right: 10rem;
+    font-size: 18px;
+}
+
+#audi-charging:hover{
+    border-color: #8e8e8e;
+    color: #8e8e8e;
+}
+
+.news{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.news ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    list-style: none;
+}
+  
+.notizia {
+    max-width: 400px;
+}
+  
+.notizia img {
+    max-width: 100%;
+    height: auto;
+}
+
+.desc-notizie{
+    display: flex;
+    margin-top: 2rem;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+#link-notizia:hover{
+    color: #5e5e5e;
+    cursor: pointer;
+}
+
+footer{
+    background-color: black;
+    color: #fff;
+}
+
+#torna-su{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    gap: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.contenitore-footer{
+    padding-top: 8rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+.contenitore-sezioni{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: space-between;
+}
+
+.sezione-footer h2{
+    margin-bottom: 3rem;
+}
+
+.sezione-footer p{
+    margin-bottom: 1rem;
+}
+
+.sezione-footer p:hover, .sezione-footer h2:hover{
+    color: #8e8e8e;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.linea{
+    border: 1px solid #8e8e8e;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: x-large;
+    margin-bottom: 1rem;
+}
+
+.copyright{
+    display: flex;
+    gap: 1.5rem;
+    font-size: 13px;
+    margin-top: 1rem;
+}
+
+.link-finali{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.social-icons i:hover, .link-finali p:hover{
+    color: #8e8e8e;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.fine-footer{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.numero{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.fine-footer p{
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    padding-bottom: 1rem;
+    font-size: 13px;
+}
+
+#fine{
+    padding-bottom: 5rem;
+}
